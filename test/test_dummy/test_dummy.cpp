@@ -11,11 +11,6 @@
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
-    
-
-    char cwd[MAX_PATH];
-    GetCurrentDirectoryA(MAX_PATH, cwd);
-    std::cout << "Current directory: " << cwd << std::endl;
 
     if(RUN_ALL_TESTS());
     return 0;
@@ -122,3 +117,4 @@ TEST(addTest, AddsMixedNumbers) {
 
 
 #endif
+
