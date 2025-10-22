@@ -23,6 +23,6 @@ jobs:
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
       - name: Build PlatformIO Project
-        run: pio build -e uno
+        run: pio run -e uno
       - name: Runing unit tests on Natieve environment
         run: pio test -e native 
