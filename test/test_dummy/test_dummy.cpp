@@ -9,9 +9,6 @@
 #include <sstream>
 #include <string>
 
-
-#include <windows.h>
-
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     
@@ -120,6 +117,7 @@ TEST(addTest, AddsNegativeNumbers) {
 TEST(addTest, AddsMixedNumbers) {
     EXPECT_EQ(add(-2, 3), 1);
 }
+
 
 
 
