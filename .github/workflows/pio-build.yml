@@ -18,7 +18,8 @@ jobs:
         with:
           python-version: '3.11'
       - name: setup gcc
-        run: apt-get install gcc
+        uses: Dup4/actions-setup-gcc@v1
+
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
 
