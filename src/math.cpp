@@ -1,10 +1,14 @@
 #include "math.hpp"
-#include <cmath>
 
 // put function definitions here:
 int add (int x, int y) {
   return x + y;
 }
+
+
+
+#ifndef ARDUINO
+#include <cmath>
 
 // New function: apply a gain to each sample in-place, rounding to nearest int
 void apply_gain(std::vector<int>& buffer, double gain) {
@@ -13,3 +17,4 @@ void apply_gain(std::vector<int>& buffer, double gain) {
         buffer[i] = static_cast<int>(std::lround(scaled));
     }
 }
+#endif
